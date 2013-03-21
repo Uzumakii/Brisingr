@@ -24,5 +24,9 @@
 
 
 */
+if (!defined('Brisingr'))
+{
+die ("Odmowa dostępu");	
+	}
 
 ?>
