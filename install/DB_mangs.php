@@ -24,9 +24,17 @@
 
 
 */
-if (!defined('Brisingr'))
-{
-die ("Odmowa dostępu");	
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
 	}
+	
+	$settings[]['manga'] = array (
+		"id" => "",
+		"tytul" => "",
+		"obrazek" => "",
+		"opis" => "",
+		"url" => "",
+	);
 
 ?>
