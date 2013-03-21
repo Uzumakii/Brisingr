@@ -28,6 +28,9 @@
 	# Yes ... 
 	define('Brisingr',true);
 	
+	$settigns = array();
+	
+	
 	$files_to_include = glob('./install/DB_*.php');
 		
 		foreach( $files_to_include as $key => $val ) 
@@ -35,5 +38,11 @@
 			include($val);	
 		}
 		
+	// dev
+		var_dump($settings);
+	
+
+
+
 		
 ?>
