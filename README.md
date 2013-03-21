@@ -1,4 +1,4 @@
-Brisingr
-========
+#Brisingr
+This is Brisingr source code, creating with my friends.
 
-Repozytoriom zawierające kod źródłowy strony budowanej przez przyjaciół o tematyce Mangi
+## Readme will be edited.
