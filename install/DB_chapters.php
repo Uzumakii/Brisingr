@@ -30,7 +30,7 @@
 		die ("Odmowa dostępu");	
 	}
 	
-	$settings[]['user'] = array (
+	$settings[]['chapters'] = array (
 		"id" => "",
 		"data" => "",
 		"autor" => "",
