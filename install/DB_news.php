@@ -25,9 +25,17 @@
 
 */
 
-if (!defined('Brisingr'))
-{
-die ("Odmowa dostępu");	
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
 	}
-
+	
+	$settings[]['news'] = array (
+		"id" => "",
+		"data" => "",
+		"autor" => "",
+		"tytul" => "",
+		"tresc" => "",
+		"id_komentarz" => "",
+	);
 ?>

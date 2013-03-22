@@ -34,9 +34,7 @@
 		"id" => "",
 		"data" => "",
 		"autor" => "",
-		"tytul" => "",
 		"tresc" => "",
-		"id_komentarz" => "",
 	);
 
 ?>
