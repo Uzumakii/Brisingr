@@ -25,4 +25,18 @@
 
 */
 
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
+	}
+	
+	$settings[]['user'] = array (
+		"id" => "",
+		"data" => "",
+		"autor" => "",
+		"tytul" => "",
+		"tresc" => "",
+		"id_komentarz" => "",
+	);
+
 ?>

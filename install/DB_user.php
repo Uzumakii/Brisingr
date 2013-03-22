@@ -24,5 +24,22 @@
 
 
 */
+	
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
+	}
+	
+	
+	$settings[]['user'] = array (
+		"id" => "",
+		"login" => "",
+		"haslo" => "",
+		"e-mail" => "",
+		"gg" => "",
+		"data_urodzenia" => "",
+		"data_konta" => "",
+		"uprawnienia" => "",
+	);
 
 ?>

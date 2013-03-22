@@ -25,4 +25,17 @@
 
 */
 
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
+	}
+
+	$settings[]['comments'] = array (
+		"id" => "",
+		"nick" => "",
+		"ip" => "",
+		"tresc" => "",
+	); 	
+	
+
 ?>

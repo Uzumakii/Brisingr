@@ -25,4 +25,19 @@
 
 */
 
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
+	}
+	
+	$settings[]['settings'] = array (
+		"menu" => array ( "Menu  = 1" => "#"),
+		"homepage" => "#",
+		"about" => "#",
+		"max_news"  => 5,
+		"max_manga" => 5,
+		"max_ostatnie"	=> 10,
+		"title" => "Brisingr Grupa Skanacyjna",	
+	);
+
 ?>
