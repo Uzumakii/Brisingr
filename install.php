@@ -25,25 +25,39 @@
 	saving passwords and more.
 	After all, this program creating file config.php with settings and defining IS_INSTALLED as True.
 */
-	# Yes ... 
+	# definitions ... 
 	define('Brisingr',true);
+	define('Brisingr_deb',true);
+	
+	
+	# requires
 	require("./includes/module.template.inc.php");
+	require("./includes/module.functions.inc.php");
 	$template = new Template('./install/tpl_install/');
 	
 	
+	#including
 	$files_to_include = glob('./install/DB_*.php');
 		
 		foreach( $files_to_include as $key => $val ) 
 		{
 			include($val);	
 		}
-		
+	#printing if debug mode
+	if(defined('Brisingr_deb')){
+	message_DEBUG($globs_and_dbfiles = array("files_to_include" => $files_to_include,"load_config" => $settings));
+	}	
+	
+	
+	
+	
+	
 	// efik:
 	// do tablicy o indexie body będą się dodawać wszystkie zmienne a potem ta tablica
 	// będzie parsowana do konkretnego pliku
 	$template->set_filenames(array('body' => 'template.tpl'));
 	
-	
+
 	// efik: 
 	// Parsowanie tablicy o indexie 'body' i wyświetlanie pliku gotowego.
 	$template->pparse('body');

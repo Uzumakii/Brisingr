@@ -21,6 +21,12 @@
 
 	In File: 
 		
+	Database 'manga'
+		"id" => int,
+		"tytul" => str,
+		"obrazek" => str,
+		"opis" => str,
+		"url" => str,
 
 
 */
@@ -29,7 +35,7 @@
 		die ("Odmowa dostępu");	
 	}
 	
-	$settings[]['manga'] = array (
+	$settings['manga'] = array (
 		"id" => "",
 		"tytul" => "",
 		"obrazek" => "",

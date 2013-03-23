@@ -21,7 +21,13 @@
 
 	In File: 
 		
-
+	Database 'news'
+		"id" => int,
+		"data" => date,
+		"autor" => str,
+		"tytul" => str,
+		"tresc" => str,
+		"id_komentarz" => int,
 
 */
 
@@ -30,7 +36,7 @@
 		die ("Odmowa dostępu");	
 	}
 	
-	$settings[]['news'] = array (
+	$settings['news'] = array (
 		"id" => "",
 		"data" => "",
 		"autor" => "",

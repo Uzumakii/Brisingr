@@ -21,7 +21,11 @@
 
 	In File: 
 		
-
+	Database 'comments'
+		"id" => int,
+		"nick" => str,
+		"ip" => str,
+		"tresc" => str,
 
 */
 
@@ -30,7 +34,7 @@
 		die ("Odmowa dostępu");	
 	}
 
-	$settings[]['comments'] = array (
+	$settings['comments'] = array (
 		"id" => "",
 		"nick" => "",
 		"ip" => "",
