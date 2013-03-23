@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Web-Brisingr	</title>
-        <link href="install.css" rel="stylesheet" type="text/css">
+        <link href="./install/tpl_install/install.css" rel="stylesheet" type="text/css">
     </head>
 <body>
 

@@ -27,8 +27,8 @@
 */
 	# Yes ... 
 	define('Brisingr',true);
-	
-	$settigns = array();
+	require("./includes/module.template.inc.php");
+	$template = new Template('./install/tpl_install/');
 	
 	
 	$files_to_include = glob('./install/DB_*.php');
@@ -38,9 +38,15 @@
 			include($val);	
 		}
 		
-	// dev
-		var_dump($settings);
+	// efik:
+	// do tablicy o indexie body będą się dodawać wszystkie zmienne a potem ta tablica
+	// będzie parsowana do konkretnego pliku
+	$template->set_filenames(array('body' => 'template.tpl'));
 	
+	
+	// efik: 
+	// Parsowanie tablicy o indexie 'body' i wyświetlanie pliku gotowego.
+	$template->pparse('body');
 
 
 
