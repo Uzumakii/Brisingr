@@ -45,11 +45,16 @@
 		}
 		
 	
+	switch($_GET['do'])
+	{
+		case 'test' 		: run_test_function(); break;
+		case 'install' 		: run_install_function(); break;
+		case 'clean' 		: run_clean_function(); break;
+	}
 	
 	
 	
-	
-	if(!isset($_SESSION["configure"]) or !$_SESSION['configure'])
+	if(!$_SESSION['configure'])
 	{
 		if(isset($_POST["submit_configure"]))
 		{
@@ -58,8 +63,10 @@
 			$_SESSION['MANGAICH'] = $_POST['for_mangs_chapt'];
 			$_SESSION['settings'] = $_POST['for_settings'];
 			$_SESSION['comments'] = $_POST['for_comments'];
+			$_SESSION['login'] = $_POST['for_login'];
+			$_SESSION['passwd'] = $_POST['for_pass'];
 			$_SESSION['configure'] = true;
-			
+			header("Location: install.php?do=test");
 		}
 		else
 		{
@@ -75,6 +82,30 @@
 		
 		}
 	}
+	if( $_SESSION['configure'] and !$_SESSION['test'])
+		{
+			if( isset($_POST["submit_test"]))
+			{
+				die('ok');
+			}
+			$template->set_filenames(array('test' => 'test.tpl'));
+				
+			$template->assign_vars(array(
+				'for_cache' => $_SESSION['cache'],
+				'for_news'  => $_SESSION['news'],
+				'mangaich'  => $_SESSION['MANGAICH'],
+				'for_sett'  => $_SESSION['settings'],
+				'for_comm'  => $_SESSION['comments'],
+				'for_login' => $_SESSION['login'],
+				'for_pass'  => $_SESSION['passwd'],
+				'for_conf' => $_SESSION['configure'],
+			
+			));	
+				
+				
+			$template->pparse('test');
+			
+		}	
 	#printing if debug mode
 	if(defined('Brisingr_deb')){
 	message_DEBUG($script = array($_SESSION,$settings));

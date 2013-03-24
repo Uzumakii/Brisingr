@@ -39,7 +39,18 @@
  		<label>
          Folder plików w których będą przechowywane komentarze:
          <input type="text" name="for_comments" value="comments" style="float:right">
-        </label>   
+        </label>  
+        <br  class="c4"> 
+ 		<label>
+         Login głównego administratora:
+         <input type="text" name="for_login" value="root" style="float:right">
+        </label>
+		<br  class="c4"> 
+ 		<label>
+         Hasło głównego administratora:
+         <input type="text" name="for_passwd" value="" style="float:right">
+        </label>  
+		
             </div>
         </div>
         
