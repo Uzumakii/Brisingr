@@ -21,7 +21,11 @@
 
 	In File: 
 		
-
+	Database 'chapters'
+		"id" => int,
+		"data" => date,
+		"autor" => str,
+		"tresc" => str,
 
 */
 
@@ -30,13 +34,11 @@
 		die ("Odmowa dostępu");	
 	}
 	
-	$settings[]['user'] = array (
+	$settings['chapters'] = array (
 		"id" => "",
 		"data" => "",
 		"autor" => "",
-		"tytul" => "",
 		"tresc" => "",
-		"id_komentarz" => "",
 	);
 
 ?>

@@ -21,7 +21,14 @@
 
 	In File: 
 		
-
+	Database 'settings'
+		"menu" = array of str,
+		"homepage" = str,
+		"about" = str,
+		"max_news" = int,
+		"max_manga" = int,
+		"max_ostatnie" = int, 
+		title = str
 
 */
 
@@ -30,13 +37,13 @@
 		die ("Odmowa dostępu");	
 	}
 	
-	$settings[]['settings'] = array (
+	$settings['settings'] = array (
 		"menu" => array ( "Menu  = 1" => "#"),
 		"homepage" => "#",
-		"about" => "#",
+		"about" => "",
 		"max_news"  => 5,
 		"max_manga" => 5,
-		"max_ostatnie"	=> 10,
+		"max_ostatnie"	=> 10, # efik: Ostatnie 10 dodanych chapterów.
 		"title" => "Brisingr Grupa Skanacyjna",	
 	);
 
