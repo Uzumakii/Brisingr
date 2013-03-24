@@ -21,8 +21,27 @@
 
 	In File: 
 		
-
+	Database 'news'
+		"id" => int,
+		"data" => date,
+		"autor" => str,
+		"tytul" => str,
+		"tresc" => str,
+		"id_komentarz" => int,
 
 */
 
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
+	}
+	
+	$settings['news'] = array (
+		"id" => "",
+		"data" => "",
+		"autor" => "",
+		"tytul" => "",
+		"tresc" => "",
+		"id_komentarz" => "",
+	);
 ?>

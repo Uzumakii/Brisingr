@@ -21,8 +21,26 @@
 
 	In File: 
 		
+	Database 'manga'
+		"id" => int,
+		"tytul" => str,
+		"obrazek" => str,
+		"opis" => str,
+		"url" => str,
 
 
 */
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
+	}
+	
+	$settings['manga'] = array (
+		"id" => "",
+		"tytul" => "",
+		"obrazek" => "",
+		"opis" => "",
+		"url" => "",
+	);
 
 ?>

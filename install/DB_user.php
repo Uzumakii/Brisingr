@@ -20,9 +20,35 @@
 -------------------------------------------------------------------------------
 
 	In File: 
-		
 
+	Database 'user'
+		"id" = int,
+		"login" = str,
+		"haslo" = str,
+		"e-mail" = str,
+		"gg" = str,
+		"data_urodzenia" = date,
+		"data_konta" = date,
+		uprawnienia = int
+	
 
 */
+	
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
+	}
+	
+	
+	$settings['user'] = array (
+		"id" => "",
+		"login" => "",
+		"haslo" => "",
+		"e-mail" => "",
+		"gg" => "",
+		"data_urodzenia" => "",
+		"data_konta" => "",
+		"uprawnienia" => "",
+	);
 
 ?>

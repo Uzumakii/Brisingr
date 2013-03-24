@@ -21,8 +21,25 @@
 
 	In File: 
 		
-
+	Database 'comments'
+		"id" => int,
+		"nick" => str,
+		"ip" => str,
+		"tresc" => str,
 
 */
+
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
+	}
+
+	$settings['comments'] = array (
+		"id" => "",
+		"nick" => "",
+		"ip" => "",
+		"tresc" => "",
+	); 	
+	
 
 ?>

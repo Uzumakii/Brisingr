@@ -21,8 +21,24 @@
 
 	In File: 
 		
-
+	Database 'chapters'
+		"id" => int,
+		"data" => date,
+		"autor" => str,
+		"tresc" => str,
 
 */
+
+	if (!defined('Brisingr'))
+	{
+		die ("Odmowa dostępu");	
+	}
+	
+	$settings['chapters'] = array (
+		"id" => "",
+		"data" => "",
+		"autor" => "",
+		"tresc" => "",
+	);
 
 ?>
