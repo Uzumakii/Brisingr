@@ -144,7 +144,7 @@ $MICHfiles	= "'.$_SESSION['MANGAICH'].'";		// def. val. MiCh ( For latest Manga 
 $setFiles	= "'.$_SESSION['settings'].'";		// def val. settings
 $ComDB		= "'.$_SESSION['comments'].'";		// def. val. comments
 
-define("Script_installed",true);
+define("IS_INSTALLED",true);
 ?>';
 
 			if(!is_dir($_SESSION['cache']))
