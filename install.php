@@ -43,26 +43,41 @@
 		{
 			include($val);	
 		}
+		
+	
+	
+	
+	
+	
+	if(!isset($_SESSION["configure"]) or !$_SESSION['configure'])
+	{
+		if(isset($_POST["submit_configure"]))
+		{
+			$_SESSION['cache'] = $_POST['for_cache'];
+			$_SESSION['news'] = $_POST['for_news'];
+			$_SESSION['MANGAICH'] = $_POST['for_mangs_chapt'];
+			$_SESSION['settings'] = $_POST['for_settings'];
+			$_SESSION['comments'] = $_POST['for_comments'];
+			$_SESSION['configure'] = true;
+			
+		}
+		else
+		{
+		// efik:
+		// do tablicy o indexie body będą się dodawać wszystkie zmienne a potem ta tablica
+		// będzie parsowana do konkretnego pliku
+		$template->set_filenames(array('configure' => 'configure.tpl'));
+			
+	
+		// efik: 
+		// Parsowanie tablicy o indexie 'body' i wyświetlanie pliku gotowego.
+		$template->pparse('configure');
+		
+		}
+	}
 	#printing if debug mode
 	if(defined('Brisingr_deb')){
-	message_DEBUG($globs_and_dbfiles = array("files_to_include" => $files_to_include,"load_config" => $settings));
-	}	
-	
-	
-	
-	
-	
-	// efik:
-	// do tablicy o indexie body będą się dodawać wszystkie zmienne a potem ta tablica
-	// będzie parsowana do konkretnego pliku
-	$template->set_filenames(array('body' => 'template.tpl'));
-	
-
-	// efik: 
-	// Parsowanie tablicy o indexie 'body' i wyświetlanie pliku gotowego.
-	$template->pparse('body');
-
-
-
+	message_DEBUG($script = array($_SESSION,$settings));
+	}
 		
 ?>

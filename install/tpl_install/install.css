@@ -21,6 +21,10 @@ a
 {
 	text-decoration:none;
 }
+form
+{
+margin:0;
+}
 .button
 {
 	display: inline-block;
@@ -97,7 +101,7 @@ a
 	overflow:auto;
 	overflow-x: hidden;
 	word-wrap:break-word;
-	font-size:13px;
+	font-size:14px;
 }
 .window_options
 {
@@ -115,4 +119,33 @@ a
 	padding:3px;
 	padding-top:0;
 }
+label
+{
+	margin:15px;
+	line-height:35px;
+	cursor:pointer;
+	padding-bottom:3px;
+	border-bottom: 1px dashed #CCCCCC;
+}
+input[type=text]
+{
+	border: 1px solid #69C;
+	height:25px;
+	padding-left:5px;
+	font-size:13px;
+	font-weight:100;
+	color:#333333;
+	border-radius:4px;
+}
+.c4
+{
+	clear:both;
+	
+}
+input[type=text]:hover
+{
+	box-shadow:0px 0px 5px #0099FF;
+}
+
+
 
