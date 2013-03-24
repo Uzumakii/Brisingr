@@ -24,4 +24,8 @@
 		echo '<span class="" style=" margin:10px !important; display:inline-block;"><strong># Query time: '.sprintf("%.5f", ($end-$start)) .' s</strong></span></pre>';	
 	}
 
+	function md5_hash($str,$sol)
+	{
+		return md5( md5($sol).md5($str).md5($sol));	
+	}
 ?>
